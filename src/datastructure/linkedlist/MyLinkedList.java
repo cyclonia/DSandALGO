@@ -1,5 +1,7 @@
 package datastructure.linkedlist;
 
+import java.util.Arrays;
+
 public class MyLinkedList {
 	Node head;
 
@@ -26,6 +28,9 @@ public class MyLinkedList {
 		}
 		System.out.println(current.getData());
 
+	}
+	public void appendWithArray(int[] arr) {
+		Arrays.stream(arr).forEach(a -> this.append(a));
 	}
 
 }
